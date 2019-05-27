@@ -25,7 +25,7 @@
 \RequirePackage[compact]{titlesec}
 \newcommand{\sectionbreak}{\clearpage}
 \titleformat{\section}[display]{\centering\Large\bfseries}{บทที่ \thesection}{0pt}{}
-\titleformat{\subsection}{\bfseries\large}{\thesection}{1em}{}
+\titleformat{\subsection}{\bfseries\large}{\thesubsection}{1em}{}
 
 % Fields on the cover
 \newcommand\entitle[1]{\renewcommand\@entitle{#1}}
