@@ -2,22 +2,30 @@
 \ProvidesClass{internshipreport}[Report template, modified for Kasetsart Internship report.]
 
 % Pass arguments
-\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{extarticle}}
 \ProcessOptions
 
 % Load classes
-\LoadClass[titlepage]{article}
+\LoadClass[titlepage]{extarticle}
 
 % Custom settings
-
+% Thai language support
+\RequirePackage{xltxtra} 
+\XeTeXlinebreaklocale "th_TH"
+% Typeface
+\RequirePackage{fontspec}
+\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+\setmainfont{TH Sarabun New}
+\setmonofont{Tlwg Typist}
+% Typography
+\renewcommand{\normalsize}{\fontsize{12}{16}\selectfont}
 % Margins
 \RequirePackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
-% Typography
-\renewcommand{\baselinestretch}{1.3} 
 % Title (TODO)
 \RequirePackage[compact]{titlesec}
 \newcommand{\sectionbreak}{\clearpage}
 \titleformat{\section}[display]{\centering\Large\bfseries}{บทที่ \thesection}{0pt}{}
+\titleformat{\subsection}{\bfseries\large}{\thesection}{1em}{}
 
 % Fields on the cover
 \newcommand\entitle[1]{\renewcommand\@entitle{#1}}
@@ -40,7 +48,7 @@
                 {\Large ณ \@location \par}%
                 \vskip 10em%
                 {\Large
-                    โดย \@author \par%
+                    \@author \par%
                     รหัสนิสิต \@studentid \par%
                 }%
                 \vfill%
