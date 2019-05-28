@@ -30,6 +30,7 @@
 \RequirePackage{fancyhdr}
 \pagestyle{fancy}
 \rhead{\thepage}
+\renewcommand{\headrulewidth}{0pt}
 % Fields on the cover
 \newcommand\entitle[1]{\renewcommand\@entitle{#1}}
 \newcommand\@entitle{\@latex@error{No \noexpand\entitle given}\@ehc}
