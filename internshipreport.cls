@@ -21,6 +21,9 @@
 
 % Typography
 \renewcommand{\normalsize}{\fontsize{12}{16}\selectfont}
+\renewcommand\large{\@setfontsize\large{13.5pt}{18}}
+\renewcommand\Large{\@setfontsize\Large{15pt}{20}}
+\renewcommand\LARGE{\@setfontsize\LARGE{17.5pt}{22}}
 
 % Margins
 \RequirePackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
