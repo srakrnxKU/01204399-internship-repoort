@@ -51,29 +51,28 @@
 
 % Cover
 \newcommand{\maketitlepage}{%
-  \null\vfil
-        \begin{center}%
-            \includegraphics[width=3cm]{logo.png} \par%
-                {\LARGE รายงานการปฏิบัติงาน (ฝกงาน) \par}%
-                \vspace{1em}
-                {\Large \@title \par}%
-                {\Large \@entitle \par}%
-                \vspace{1em}
-                {\Large ณ \@location \par}%
-                \vskip 10em%
-                {\Large
-                    \@author \par%
-                    รหัสนิสิต \@studentid \par%
-                }%
-                \vfill%
-                {\Large% 
-                    ประจำปีการศึกษา \@date \par%
-                    ภาควิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ \par%
-                    มหาวิทยาลัยเกษตรศาสตร์ \par%
-                }
-        \end{center}\par
-  \vfil\null%
-  \end{titlepage}%
+    \begin{center}%
+        \includegraphics[width=3cm]{logo.png} \par%
+        \vspace{1em}
+        \textbf{\LARGE รายงานการปฏิบัติงาน (ฝกงาน)} \par%
+        \vspace{1em}
+        \textbf{\Large \@title} \par%
+        \textbf{\Large \@entitle} \par%
+        \vspace{1em}
+        \textbf{\Large ณ \@location} \par%
+        \vskip 10em%
+        {\Large
+            \textbf{\@author} \par%
+            \textbf{รหัสนิสิต} \@studentid \par%
+        }%
+        \vfill%
+        \textbf{\Large% 
+            ประจำปีการศึกษา \@date \\%
+            ภาควิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ \\%
+            มหาวิทยาลัยเกษตรศาสตร์ \\%
+        }\par
+    \end{center}\par
+    \end{titlepage}%
 }
 
 \renewcommand\maketitle{\begin{titlepage}%
