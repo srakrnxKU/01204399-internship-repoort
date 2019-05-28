@@ -26,14 +26,15 @@
 \newcommand{\sectionbreak}{\clearpage}
 \titleformat{\section}[display]{\centering\Large\bfseries}{บทที่ \thesection}{0pt}{}
 \titleformat{\subsection}{\bfseries\large}{\thesubsection}{1em}{}
-
+% Page numbering
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+\rhead{\thepage}
 % Fields on the cover
 \newcommand\entitle[1]{\renewcommand\@entitle{#1}}
 \newcommand\@entitle{\@latex@error{No \noexpand\entitle given}\@ehc}
-
 \newcommand\location[1]{\renewcommand\@location{#1}}
 \newcommand\@location{\@latex@error{No \noexpand\location given}\@ehc}
-
 \newcommand\studentid[1]{\renewcommand\@studentid{#1}}
 \newcommand\@studentid{\@latex@error{No \noexpand\studentid given}\@ehc}
 
@@ -42,9 +43,11 @@
   \null\vfil
         \begin{center}%
             \includegraphics[width=3cm]{logo.png} \par%
-                {\LARGE รายงานการปฏิบัติงาน (ฝกงาน) \par\vspace{1em}}%
+                {\LARGE รายงานการปฏิบัติงาน (ฝกงาน) \par}%
+                \vspace{1em}
                 {\Large \@title \par}%
                 {\Large \@entitle \par}%
+                \vspace{1em}
                 {\Large ณ \@location \par}%
                 \vskip 10em%
                 {\Large
