@@ -52,7 +52,9 @@
 \newcommand\@studentid{\@latex@error{No \noexpand\studentid given}\@ehc}
 
 % Table of Contents
+\RequirePackage{tocstyle}
 \renewcommand{\contentsname}{สารบัญ}
+\setcounter{tocdepth}{1} 
 
 % Cover
 \newcommand{\maketitlepage}{%
