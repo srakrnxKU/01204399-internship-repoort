@@ -20,6 +20,8 @@
 \setmonofont{Tlwg Typist}
 
 % Typography
+\RequirePackage{indentfirst}
+\setlength{\parindent}{0.5in}
 \renewcommand{\normalsize}{\fontsize{12}{16}\selectfont}
 \renewcommand\large{\@setfontsize\large{13.5pt}{18}}
 \renewcommand\Large{\@setfontsize\Large{15pt}{20}}
