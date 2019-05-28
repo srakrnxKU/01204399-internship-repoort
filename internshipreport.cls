@@ -66,7 +66,7 @@
         \vskip 10em%
         {\Large
             \textbf{\@author} \par%
-            \textbf{รหัสนิสิต} \@studentid \par%
+            \textbf{รหัสนิสิต \@studentid} \par%
         }%
         \vfill%
         \textbf{\Large% 
