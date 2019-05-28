@@ -38,6 +38,8 @@
 \newcommand\@location{\@latex@error{No \noexpand\location given}\@ehc}
 \newcommand\studentid[1]{\renewcommand\@studentid{#1}}
 \newcommand\@studentid{\@latex@error{No \noexpand\studentid given}\@ehc}
+% Table of Contents
+\renewcommand{\contentsname}{สารบัญ}
 
 % Cover
 \newcommand{\maketitlepage}{%
