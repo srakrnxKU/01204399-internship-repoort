@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{internshipreport}[Report template, modified for Kasetsart Internship report.]
+\ProvidesClass{internshipreport_eng}[Report template, modified for Kasetsart Internship report.]
 
 % Pass arguments
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{extarticle}}
@@ -16,8 +16,8 @@
 % Typeface
 \RequirePackage{fontspec}
 \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
-\setmainfont{TH Sarabun New}
-\setmonofont{Tlwg Typist}
+\setmainfont{Times New Roman}
+\setmonofont{Arial}
 
 % Typography
 \RequirePackage{indentfirst}
@@ -33,7 +33,7 @@
 % Title
 \RequirePackage[compact]{titlesec}
 \newcommand{\sectionbreak}{\clearpage}
-\titleformat{\section}[display]{\centering\Large\bfseries}{บทที่ \thesection}{0pt}{}
+\titleformat{\section}[display]{\centering\Large\bfseries}{Chapter \thesection}{0pt}{}
 \titleformat{\subsection}{\bfseries\large}{\thesubsection}{1em}{}
 
 % Page numbering
@@ -52,14 +52,14 @@
 \newcommand\@studentid{\@latex@error{No \noexpand\studentid given}\@ehc}
 
 % Table of Contents
-\renewcommand{\contentsname}{สารบัญ}
+\renewcommand{\contentsname}{List of Tables}
 
 % Cover
 \newcommand{\maketitlepage}{%
     \begin{center}%
         \includegraphics[width=3cm]{logo.png} \par%
         \vspace{1em}
-        \textbf{\LARGE Internship Repoirt} \par%
+        \textbf{\LARGE Internship Report} \par%
         \vspace{1em}
         \textbf{\Large \@title} \par%
         \textbf{\Large \@entitle} \par%
