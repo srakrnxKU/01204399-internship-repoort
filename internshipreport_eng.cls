@@ -16,8 +16,8 @@
 % Typeface
 \RequirePackage{fontspec}
 \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
-\setmainfont{Times New Roman}
-\setmonofont{Arial}
+\setmainfont{TH Sarabun New}
+\setmonofont{Tlwg Typist}
 
 % Typography
 \RequirePackage{indentfirst}
