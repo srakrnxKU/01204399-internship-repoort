@@ -54,6 +54,8 @@
 % Table of Contents
 \RequirePackage{titletoc}
 \renewcommand{\contentsname}{สารบัญ}
+\renewcommand{\listfigurename}{สารบัญภาพ}
+\renewcommand{\listtablename}{สารบัญตาราง}
 \setcounter{tocdepth}{1} 
 \titlecontents{section}[3em]{}{\contentslabel[บทที่ \thecontentslabel]{3em}}{\hspace*{-3em}}{\titlerule*[1pc]{.}\contentspage}
 
