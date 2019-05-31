@@ -57,13 +57,14 @@
 \renewcommand{\listfigurename}{สารบัญภาพ}
 \renewcommand{\listtablename}{สารบัญตาราง}
 \setcounter{tocdepth}{1} 
-\titlecontents{section}[3em]{}{\contentslabel[บทที่ \thecontentslabel]{3em}}{\hspace*{-3em}}{\titlerule*[1pc]{.}\contentspage}
+\titlecontents{section}[4em]{}{\contentslabel[บทที่ \thecontentslabel]{4em}}{\hspace*{-4em}}{\titlerule*[1pc]{.}\contentspage}
+\titlecontents{figure}[4em]{}{\contentslabel[ภาพที่ \thecontentslabel]{4em}}{\hspace*{-4em}}{\titlerule*[1pc]{.}\contentspage}
+\titlecontents{table}[4em]{}{\contentslabel[ตารางที่ \thecontentslabel]{4em}}{\hspace*{-4em}}{\titlerule*[1pc]{.}\contentspage}
 
 % Table and Figure captions
 \RequirePackage{caption}
 \captionsetup[table]{name=ตารางที่ }
 \captionsetup[figure]{name=ภาพที่ }
-
 
 % Cover
 \newcommand{\maketitlepage}{%
