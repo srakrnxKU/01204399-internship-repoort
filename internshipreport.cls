@@ -36,8 +36,13 @@
 % Title
 \RequirePackage[compact]{titlesec}
 \newcommand{\sectionbreak}{\clearpage}
-\titleformat{\section}[display]{\centering\Large\bfseries}{\chaptername \thesection}{0pt}{}
-\titleformat{\subsection}{\bfseries\large}{\thesection}{1em}{}
+\titleformat{\subsection}{\bfseries \large}{\thesubsection}{1em}{}
+\titleformat{\section}[display]{\centering \Large \bfseries}{%
+    \ifnum\pdfstrcmp{\@currenvir}{appendices}=0
+        \appendixname\ \thesection
+    \else
+        \chaptername\ \thesection
+    \fi}{0pt}{}
 
 % Page numbering
 \RequirePackage{fancyhdr}
@@ -57,9 +62,9 @@
 % Table of Contents
 \RequirePackage{titletoc}
 \setcounter{tocdepth}{1} 
-\titlecontents{chapter}[4em]{}{\contentslabel[\chaptername \thecontentslabel]{4em}}{\hspace*{-4em}}{\titlerule*[1pc]{.}\contentspage}
-\titlecontents{figure}[4em]{}{\contentslabel[\figurename \thecontentslabel]{4em}}{\hspace*{-4em}}{\titlerule*[1pc]{.}\contentspage}
-\titlecontents{table}[4em]{}{\contentslabel[\tablename \thecontentslabel]{4em}}{\hspace*{-4em}}{\titlerule*[1pc]{.}\contentspage}
+\titlecontents{section}[4em]{}{\contentslabel[\chaptername\ \thecontentslabel]{4em}}{\hspace*{-4em}}{\titlerule*[1pc]{.}\contentspage}
+\titlecontents{figure}[4em]{}{\contentslabel[\figurename\ \thecontentslabel]{4em}}{\hspace*{-4em}}{\titlerule*[1pc]{.}\contentspage}
+\titlecontents{table}[4em]{}{\contentslabel[\tablename\ \thecontentslabel]{4em}}{\hspace*{-4em}}{\titlerule*[1pc]{.}\contentspage}
 
 % Table and Figure captions
 \RequirePackage{caption}
