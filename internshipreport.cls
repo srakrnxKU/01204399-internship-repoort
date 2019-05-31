@@ -14,10 +14,13 @@
 \XeTeXlinebreaklocale "th_TH"
 
 % Typeface
+\RequirePackage{polyglossia}
+\setdefaultlanguage{thai}
 \RequirePackage{fontspec}
 \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
-\setmainfont{TH Sarabun New}
+\setmainfont{Laksaman}
 \setmonofont{Tlwg Typist}
+\newfontfamily{\thaifont}[Script=Thai]{Laksaman}
 
 % Typography
 \RequirePackage{indentfirst}
@@ -33,7 +36,7 @@
 % Title
 \RequirePackage[compact]{titlesec}
 \newcommand{\sectionbreak}{\clearpage}
-\titleformat{\section}[display]{\centering\Large\bfseries}{บทที่ \thesection}{0pt}{}
+% \titleformat{\section}[display]{\centering\Large\bfseries}{บทที่ \thesection}{0pt}{}
 \titleformat{\subsection}{\bfseries\large}{\thesubsection}{1em}{}
 
 % Page numbering
@@ -53,9 +56,9 @@
 
 % Table of Contents
 \RequirePackage{titletoc}
-\renewcommand{\contentsname}{สารบัญ}
-\renewcommand{\listfigurename}{สารบัญภาพ}
-\renewcommand{\listtablename}{สารบัญตาราง}
+% \renewcommand{\contentsname}{สารบัญ}
+% \renewcommand{\listfigurename}{สารบัญภาพ}
+% \renewcommand{\listtablename}{สารบัญตาราง}
 \setcounter{tocdepth}{1} 
 \titlecontents{section}[4em]{}{\contentslabel[บทที่ \thecontentslabel]{4em}}{\hspace*{-4em}}{\titlerule*[1pc]{.}\contentspage}
 \titlecontents{figure}[4em]{}{\contentslabel[ภาพที่ \thecontentslabel]{4em}}{\hspace*{-4em}}{\titlerule*[1pc]{.}\contentspage}
@@ -63,8 +66,8 @@
 
 % Table and Figure captions
 \RequirePackage{caption}
-\captionsetup[table]{name=ตารางที่ }
-\captionsetup[figure]{name=ภาพที่ }
+% \captionsetup[table]{name=ตารางที่ }
+% \captionsetup[figure]{name=ภาพที่ }
 
 % Cover
 \newcommand{\maketitlepage}{%
