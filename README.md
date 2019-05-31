@@ -12,4 +12,5 @@
 
 ## กิตติกรรมประกาศ
 
-คำตอบของ[คำถามนี้บน Stack Overflow](https://stackoverflow.com/questions/581916/how-do-you-extend-article-document-class-in-latex) โดยผู้ใช้ godbyk ช่วยปูพื้นฐานในการเขียนคลาสดังกล่าวได้อย่างดียิ่ง ผู้เขียนขอขอบพระคุณ (The author of this LaTeX file would like to acknowledge the user godbyk on Stack Overflow for a good example code on writing this own class.)
+- คำตอบของ[คำถามนี้บน Stack Overflow](https://stackoverflow.com/questions/581916/how-do-you-extend-article-document-class-in-latex) โดยผู้ใช้ godbyk ช่วยปูพื้นฐานในการเขียนคลาสดังกล่าวได้อย่างดียิ่ง ผู้เขียนขอขอบพระคุณ (The author of this LaTeX file would like to acknowledge the user godbyk on Stack Overflow for a good example code on writing this own class.)
+- [คุณานนต์ บุรเทพ](https://github.com/phankunanon) ช่วยเขียนเทมเพลตภาษาอังกฤษ (อย่างไรก็ดี ประวัติในการช่วยเขียนหายไปเนื่องจากกระบวนการรวมโค้ดด้วยมือ, ต้องขออภัยอย่างยิ่ง)
